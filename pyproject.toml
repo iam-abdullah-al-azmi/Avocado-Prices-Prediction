@@ -7,10 +7,13 @@ authors = [
     { name = "iam-abdullah-al-azmi", email = "azmi@iut-dhaka.edu" }
 ]
 requires-python = ">=3.12"
-dependencies = []
-
-[project.scripts]
-avocado-prices-prediction = "avocado_prices_prediction:main"
+dependencies = [
+    "numpy",
+    "pandas",
+    "seaborn",
+    "matplotlib",
+    "scikit-learn"
+]
 
 [build-system]
 requires = ["uv_build>=0.13.4,<0.14.0"]
